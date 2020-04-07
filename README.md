@@ -38,7 +38,7 @@ In order to replace the "Hello World" application that comes bundled with this d
 create a new `Dockerfile` in an empty folder with the following contents:
 
 	FROM joebibe/lamp:latest
-	RUN rm -fr /app && git clone https://github.com/joebibe/lamp.git /app
+	RUN rm -fr /app && git clone https://github.com/username/customapp.git /app
 	EXPOSE 80 3306
 	CMD ["/run.sh"]
 
